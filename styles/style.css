@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--dark-blue-100: #609ED4;
+	--dark-blue-200: #356EA9;
+	--dark-blue-300: #0A3871;
+	--dark-blue-400: #072B61;
+	--dark-blue-500: #052051;
+
+	--light-blue-100: #F3F5FC;
+	--light-blue-200: #EFF1FA;
+	--light-blue-300: #E9ECF8;
+	--light-blue-400: #AAB2D5;
+	--light-blue-500: #757FB2;
+
+	--gray-100: #CED4DA;
+	--gray-200: #ADB5BD;
+	--gray-300: #868E96;
+	--gray-400: #495057;
+	--gray-500: #343A40;
+}
+
+body {
+	background-color: var(--light-blue-100);
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	margin-top: 2vh;
+}
+
+main {
+	display: flex;
+	gap: 2vw;
+}
+
+
+#interativos {
+	display: flex;
+	flex-direction: column;
+
+	gap: 5vh;
+
+	width: 50vw;
+
+	margin-top: 3vh;
+	margin-left: 7vw;
+}
+
+#interativos__texto {
+	color: var(--dark-blue-300);
+	font-size: 2rem;
+	font-family: "Inter", sans-serif;
+
+/*	height: 60vh;*/
+	border: none;
+/*	height: 10vh;*/
+
+	background-color: var(--light-blue-100);
+}
+
+#interativos__aviso {
+	display: flex;
+
+	font-family: "Inter", sans-serif;
+	font-size: 0.75rem;
+	font-weight: 400;
+
+	color: var(--gray-400);
+
+	margin-bottom: 1vh;
+}
+
+#interativos__aviso__icone {
+	margin-left: 1rem;
+}
+
+#interativos__botoes{
+	display: flex;
+
+	width: 100%;
+	gap: 24px;
+}
+
+.botao {
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+
+	padding: 24px;
+	border-radius: 24px;
+
+	border: 1px solid var(--dark-blue-300);
+}
+
+#interativos__botoes__criptografar {
+	color: white;
+	background-color: var(--dark-blue-300);
+	transition: 0.3s;
+
+	width: 50%;
+}
+
+#interativos__botoes__criptografar:hover {
+	background-color: var(--dark-blue-400);
+	transition: 0.3s;
+}
+
+#interativos__botoes__descriptografar {
+	border-color: var(--dark-blue-300);
+	color: var(--dark-blue-300);
+	transition: 0.3s;
+
+	width: 50%;
+	
+}
+
+#interativos__botoes__descriptografar:hover {
+	background-color: var(--light-blue-200);
+	transition: 0.3s;
+
+}
+
+#resultado {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+
+	width: 35vw;
+	background-color: white;
+	border-radius: 32px;
+
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#resultado__padrao__nenhuma_mensagem_encontrada_imagem {
+	width: 90%;
+}
+
+#resultado__padrao__nenhuma_mensagem_encontrada_texto {
+	font-family: "Inter", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+#resultado__padrao__nenhuma_mensagem_encontrada_descricao {
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+#resultado__processado {
+	display: none;
+
+	flex-direction: column;
+
+	justify-content: space-between;
+	align-items: center;
+
+	height: 100%;
+	width: 100%;
+
+}
+
+#resultado__processado__texto {
+	font-family: "Inter", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+
+	color: var(--gray-400);
+
+	margin-top: 2vh;
+}
+
+#resultado__processado__copiar {
+	color: var(--dark-blue-300);
+	background-color: white;
+	width: 90%;
+
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+/*	width: 100vw;*/
+	height: 4vh;
+	padding-top: 4vh;
+/*	margin-top: 4vh;*/
+}
+
+#developed_by {
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+#socials {
+	display: flex;
+	gap: 3vw;
+}
+
+.socials__link {
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+
+/*	border-radius: 24px;*/
+	border-left: 6px solid var(--dark-blue-300);
+	text-decoration: none;
+/*	padding: 1vh 3vw;*/
+	padding-left: 0.5vw;
+	color: var(--gray-500);
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		gap: 10vh;
+	}
+
+	#interativos {
+		margin-left: 0;
+		width: 90vw;
+	}
+
+	#resultado {
+		width: 90vw;
+		height: 30vh;
+	}
+
+	#resultado__padrao__nenhuma_mensagem_encontrada_imagem {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 375px) {
+
+	#interativos__botoes {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#interativos__botoes__criptografar {
+		width: 90%;
+	}
+
+	#interativos__botoes__descriptografar {
+		width: 90%;
+	}
+
+	#resultado {
+		height: 40%;
+	}
+
+	#resultado__processado__texto {
+		width: 95%;
+	}
+}

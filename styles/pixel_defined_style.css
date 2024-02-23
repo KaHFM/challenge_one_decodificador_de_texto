@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--dark-blue-100: #609ED4;
+	--dark-blue-200: #356EA9;
+	--dark-blue-300: #0A3871;
+	--dark-blue-400: #072B61;
+	--dark-blue-500: #052051;
+
+	--light-blue-100: #F3F5FC;
+	--light-blue-200: #EFF1FA;
+	--light-blue-300: #E9ECF8;
+	--light-blue-400: #AAB2D5;
+	--light-blue-500: #757FB2;
+
+	--gray-100: #CED4DA;
+	--gray-200: #ADB5BD;
+	--gray-300: #868E96;
+	--gray-400: #495057;
+	--gray-500: #343A40;
+}
+
+body {
+	background-color: var(--light-blue-100);
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	margin-top: 40px;
+	margin-left: 40px;
+
+	height: 48px;
+	width: 120px;
+}
+
+main {
+	display: flex;
+	gap: 2vw;
+}
+
+
+#interativos {
+	display: flex;
+	flex-direction: column;
+
+	gap: 65vh;
+
+	width: 60vw;
+
+	margin-top: 168px;
+	margin-left: 240px;
+}
+
+#interativos__texto {
+	color: var(--dark-blue-300);
+	font-size: 2rem;
+	font-family: "Inter", sans-serif;
+
+	border: none;
+
+	width: 680px;
+	height: 48px;
+}
+
+.botao {
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+
+	padding: 24px;
+	border-radius: 24px;
+
+	border: 1px solid var(--dark-blue-300);
+}
+
+#interativos__botoes {
+	display: flex;
+	width: 680px;
+	gap: 24px;
+}
+
+#interativos__botoes__criptografar {
+	color: white;
+	background-color: var(--dark-blue-300);
+	transition: 0.3s;
+
+	width: 328px;
+}
+
+#interativos__botoes__criptografar:hover {
+	background-color: var(--dark-blue-400);
+	transition: 0.3s;
+}
+
+#interativos__botoes__descriptografar {
+	border-color: var(--dark-blue-300);
+	color: var(--dark-blue-300);
+	transition: 0.3s;
+
+	width: 328px;
+}
+
+#interativos__botoes__descriptografar:hover {
+	background-color: var(--light-blue-200);
+	transition: 0.3s;
+
+}
+
+#resultado {
+	width: 400px;
+	height: 944px;
+	background-color: red;
+}

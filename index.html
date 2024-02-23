@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Decodificador de Texto</title>
+
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+	<script src="app.js"></script>
+</head>
+<body>
+
+	<header>
+		<img src="./assets/logo.png">
+	</header>
+	<main>
+
+		<!-- <h1>Decodificador de Texto</h1> -->
+
+		<section id="interativos">
+			<textarea id="interativos__texto" type="text" name=""  rows="12">Digite seu Texto</textarea>
+
+
+			<div>
+				<p id="interativos__aviso"><img id="interativos__aviso__icone" src="./assets/ponto_de_exclamacao.svg" alt="Ponto de exclamação">Apenas letras minúsculas e sem acento.</p>
+				<div id="interativos__botoes">
+					<button id="interativos__botoes__criptografar" class="botao" onclick="criptografar()">Criptografar</button>
+					<button id="interativos__botoes__descriptografar" class="botao" onclick="descriptografar()">Descriptografar</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="resultado">
+			<div id="resultado__padrao">
+				<img id="resultado__padrao__nenhuma_mensagem_encontrada_imagem" src="./assets/nenhuma_mensagem_encontrada.svg" alt="Nenhuma mensagem encontrada">
+				<p id="resultado__padrao__nenhuma_mensagem_encontrada_texto">Nenhuma mensagem encontrada</p>
+				<p id="resultado__padrao__nenhuma_mensagem_encontrada_descricao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+			</div>
+
+			<div id="resultado__processado">
+				<p id="resultado__processado__texto"></p>
+				<button id="resultado__processado__copiar" class="botao" onclick="copiar()">Copiar</button>
+			</div>
+		</section>
+
+	</main>
+	<footer>
+		<p id="developed_by">Desenvolvido por Kauê</p>
+		<section id="socials">
+			<a id="socials__github" class="socials__link" href="https://github.com/KaHFM/">GitHub</a>
+			<a id="socials__linkedin" class="socials__link" href="https://www.linkedin.com/in/kau%C3%AA-faria-6938a0222/">LinkedIn</a>
+		</section>
+	</footer>
+
+</body>
+</html>
